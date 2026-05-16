@@ -1,0 +1,260 @@
+Git & GitHub Commands Cheat Sheet
+1. git init
+Definition
+
+Initializes a new Git repository in your project folder.
+
+Use
+
+Used when starting a new project with Git tracking.
+
+git init
+2. git clone
+Definition
+
+Copies an existing GitHub repository to your local machine.
+
+Use
+
+Used when downloading a project from GitHub.
+
+git clone <repository-url>
+
+Example:
+
+git clone https://github.com/user/project.git
+3. git status
+Definition
+
+Shows the current status of files in the repository.
+
+Use
+
+Used to check modified, staged, or untracked files.
+
+git status
+4. git add
+Definition
+
+Adds files to the staging area.
+
+Use
+
+Used before committing changes.
+
+git add filename
+
+Add all files:
+
+git add .
+5. git commit
+Definition
+
+Saves staged changes with a message.
+
+Use
+
+Used to create a snapshot of your project changes.
+
+git commit -m "Your message"
+
+Example:
+
+git commit -m "Added login page"
+6. git push
+Definition
+
+Uploads local commits to GitHub.
+
+Use
+
+Used to send your changes to the remote repository.
+
+git push origin main
+7. git pull
+Definition
+
+Downloads and updates the latest changes from GitHub.
+
+Use
+
+Used before working to avoid conflicts.
+
+git pull origin main
+8. git branch
+Definition
+
+Shows or creates branches.
+
+Use
+
+Used for managing multiple versions/features.
+
+Show branches:
+
+git branch
+
+Create branch:
+
+git branch feature
+9. git checkout
+Definition
+
+Switches between branches.
+
+Use
+
+Used to move from one branch to another.
+
+git checkout branch-name
+
+Example:
+
+git checkout main
+
+Create and switch:
+
+git checkout -b new-branch
+10. git merge
+Definition
+
+Combines changes from one branch into another.
+
+Use
+
+Used to merge feature branches into main.
+
+git merge branch-name
+
+Example:
+
+git merge khushnoor
+11. git log
+Definition
+
+Shows commit history.
+
+Use
+
+Used to view previous commits.
+
+git log
+
+Short version:
+
+git log --oneline
+12. git remote
+Definition
+
+Manages remote repository connections.
+
+Use
+
+Used to connect local repo with GitHub.
+
+Check remote:
+
+git remote -v
+
+Add remote:
+
+git remote add origin <repository-url>
+13. git fetch
+Definition
+
+Downloads changes from remote without merging.
+
+Use
+
+Used to see updates before applying them.
+
+git fetch
+14. git reset
+Definition
+
+Removes commits or unstages files.
+
+Use
+
+Used to undo changes.
+
+Unstage file:
+
+git reset filename
+
+Hard reset:
+
+git reset --hard HEAD
+15. git stash
+Definition
+
+Temporarily saves uncommitted changes.
+
+Use
+
+Used when switching branches without committing.
+
+git stash
+
+Restore:
+
+git stash pop
+16. git rm
+Definition
+
+Removes files from Git tracking.
+
+Use
+
+Used to delete files from repository.
+
+git rm filename
+17. git diff
+Definition
+
+Shows differences between files/commits.
+
+Use
+
+Used to review changes before commit.
+
+git diff
+18. git config
+Definition
+
+Configures Git username and email.
+
+Use
+
+Used during Git setup.
+
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+Common Git Workflow
+Create Repository
+git init
+Add Files
+git add .
+Commit Changes
+git commit -m "Initial commit"
+Connect GitHub Repository
+git remote add origin <repository-url>
+Push Code
+git push -u origin main
+Branch Workflow Example
+Create Branch
+git checkout -b khushnoor
+Push Branch
+git push origin khushnoor
+Switch to Main
+git checkout main
+Merge Branch
+git merge khushnoor
+Push Updated Main
+git push origin main
+Useful Tips
+Always run git pull before starting work.
+Commit small meaningful changes.
+Use branches for new features.
+Write clear commit messages.
+Push code regularly to GitHub.
